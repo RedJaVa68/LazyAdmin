@@ -55,3 +55,12 @@ I opened the sql file on a code editor and found a username and password...
 <p align="center">
   <img width="600" src="images/code_in_sql.png">
 </p>
+
+I know its an MD5 hash. So I copied it and pasted it to hashes.com to decrypt it
+
+Password was Password123. << A very secure password, right?
+
+
+<p align="center">
+  <img width="600" src="images/decrypt_pass.png">
+</p>
