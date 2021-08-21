@@ -37,3 +37,21 @@ I find more interesting directories...
 <p align="center">
   <img width="600" src="images/gobuster2nd2.png">
 </p>
+
+I find the login page to the dashboard on the "as" directory
+
+<p align="center">
+  <img width="600" src="images/as_login.png">
+</p>
+
+I searched the other directories and found the "inc" directory to have a backup of the mysql database.
+
+<p align="center">
+  <img width="600" src="images/inc_dir.png">
+</p>
+
+I opened the sql file on a code editor and found a username and password...
+
+<p align="center">
+  <img width="600" src="images/code_in_sql.png">
+</p>
