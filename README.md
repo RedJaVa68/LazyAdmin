@@ -35,5 +35,5 @@ I used gobuster dir -u {HTTP URL of IP}/content -w {wordlist.txt}
 I find more interesting directories...
 
 <p align="center">
-  <img width="600" src="images/gobuster2nd.png">
+  <img width="600" src="images/gobuster2nd2.png">
 </p>
