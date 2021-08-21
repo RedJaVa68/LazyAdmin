@@ -9,3 +9,11 @@ I got a default Apache Ubuntu page. Now I know it's a Linux webserver.
 <p align="center">
   <img width="600" src="images/apache_default.png">
 </p>
+
+I went onto my terminal and I ran: nmap -sV {IP}
+
+I learned that the webserver's http runs on port 80.
+
+<p align="center">
+  <img width="600" src="images/nmap.png">
+</p>
