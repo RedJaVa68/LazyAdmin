@@ -94,3 +94,45 @@ Now I am in!
 <p align="center">
   <img width="600" src="images/reverse_shel3.png">
 </p>
+
+First thing I did was look for user.txt
+
+<p align="center">
+  <img width="600" src="images/usertxt.png">
+</p>
+
+I also found that there is a perl script and a file that contains the login for the sql database
+
+Next I did was check my sudo privileges... 
+
+<p align="center">
+  <img width="600" src="images/sudovuln.png">
+</p>
+
+I find out I can run the perl script as sudo, but I do not have write access to it
+
+So I checked what the script does...
+
+<p align="center">
+  <img width="600" src="images/backup.png">
+</p>
+
+It runs a shell script in etc/copy.sh
+
+I checked that script and found a reverse shell code in it. So i editted that code by putting my own IP and port number...
+
+I ran another nc -lvp {different port number}
+
+I ran the command sudo perl /home/itguy/backup.pl
+
+Now I got a reverse script with root access!
+
+<p align="center">
+  <img width="600" src="images/success.png">
+</p>
+
+I ran cat root/root.txt and got the final code!
+
+My suggestion is to make directory names random, do not leave the mysql backup on the same server, use hard to guess passwords, deny sudo access to scripts, and dont leave any reverse shell scripts on the webserver. :)
+
+Here is the link to the tryhackme room if you want to try it out: https://tryhackme.com/room/lazyadmin
