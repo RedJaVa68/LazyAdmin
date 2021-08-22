@@ -133,6 +133,6 @@ Now I got a reverse script with root access!
 
 I ran cat root/root.txt and got the final code!
 
-My suggestion is to make directory names random, do not leave the mysql backup on the same server, use hard to guess passwords, deny sudo access to scripts, and dont leave any reverse shell scripts on the webserver. :)
+My suggestions are to make directory names random, do not leave the mysql backup on the same server, use hard to guess passwords, deny sudo access to scripts, and dont leave any reverse shell scripts on the webserver. :)
 
 Here is the link to the tryhackme room if you want to try it out: https://tryhackme.com/room/lazyadmin
