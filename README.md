@@ -64,3 +64,33 @@ Password was Password123. << A very secure password, right?
 <p align="center">
   <img width="600" src="images/decrypt_pass.png">
 </p>
+
+I tried using the username "master" and the password "Password123" on the dashboard
+
+It logged me right in. I went through each directory trying to find vulnerabilities in the site.
+
+I found I could upload a reverse shell script to the themes...
+
+It requires a zip file, so I put the script into a zip file and uploaded it.
+
+<p align="center">
+  <img width="600" src="images/reverse_shel1.png">
+</p>
+
+I remember that I can view the files to the themes in the directory /content/_themes
+
+Woohoo! I found it!
+
+<p align="center">
+  <img width="600" src="images/reverse_shel2.png">
+</p>
+
+On my terminal I entered the command nc -lvp {port}
+
+Netcat will be listening to the port for any reverse shell. 
+
+Now I am in!
+
+<p align="center">
+  <img width="600" src="images/reverse_shel3.png">
+</p>
